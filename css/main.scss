@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&display=swap');
+
+:root {
+    --primary-color: #00CBFF;
+}
+
+body {
+    background: #F1EEEE;
+    margin: 0;
+    font-family: 'Poppins';
+    position: relative;
+    min-height: 100vh;
+}
+
+.hero .container{
+    padding-top: 4em;
+    padding-bottom: 2em;
+    padding-right: 2em;
+    padding-left: 2em;
+    text-align: center;
+}
+
+.left-col {
+    display:inline-block;
+}
+
+.left-col img{
+    width: 300px;
+}
+
+
+.create-account-section {
+    background-color: white;
+    border: 1px solid #707070;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    width: 300px;
+    border-radius: 1em;
+    margin-bottom: 1em;
+    justify-content: center;
+}
+
+.create-account-section input{
+   
+    margin: 1em;
+    padding: .50em;
+}
+
+.input-label {
+    font-size: 14;
+    position: relative;
+    padding-top: 20px;
+
+    .input-textbox {
+        display: inline-block;
+        border: 1px solid #707070;
+        background-color: #F1EEEE;
+        border-radius: .50em;
+        border: none;
+        -webkit-appearance: none;
+        -ms-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        outline: none;
+        font-size: 14px;
+    }
+
+    .input-placeholder {
+        position: absolute;
+        left: 20px;
+        transform: translateY(77.5%);
+        color: #AAA;
+        transition: 
+            top 0.3s ease,
+            font-size 0.3s ease,
+            color 0.3s ease;
+    }
+
+    .input-textbox:valid + .input-placeholder,
+    .input-textbox:focus + .input-placeholder {
+        top: -10px;
+        font-size: 10px;
+        color: #222;
+    }
+}
+
+.create-account-cta {
+    border: 1px solid #707070;
+    border-radius: .5em;
+    background-color: #00B7E6;
+    color: white;
+    font-weight: 700;
+
+    &:hover {
+        background-color: #0b76da;
+        cursor: pointer;
+    }
+}
+
+.existing-account-section {
+    border: 1px solid #707070;
+    border-radius: 1em;
+    background-color: white;
+    width: 300px;
+    padding-bottom: 1em;
+}  
+
+.right-col img {
+    width: 300px;
+}
+
+footer {
+    padding-top: 1em;
+    padding-bottom: 1em;
+    text-align: center;
+    background-color: #FFFFFF;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+footer a{
+    padding-right: .5em;
+    padding-left: .5em;
+    color: black;
+    font-size: .75em;
+}
+
+@media only screen and (min-width: 768px) {
+    .hero .container{
+        display: flex;
+        justify-content: center;
+    }
+
+    .left-col {
+        display:inline-block;
+        margin: 20px;
+    }
+
+    .right-col {
+        margin: 20px;
+    }
+
+    .right-col img {
+        margin-top: 135px;
+    }
+}
