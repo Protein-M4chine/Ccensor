@@ -24,12 +24,18 @@ body {
     display:inline-block;
 }
 
+.subheader{
+    font-size: 85%;
+    text-align: left;
+}
+
 .left-col img{
     width: 300px;
+    margin-right: 60px;
 }
 
 
-.create-account-section {
+.login-section {
     background-color: white;
     border: 1px solid #707070;
     padding-top: 1em;
@@ -40,9 +46,9 @@ body {
     justify-content: center;
 }
 
-.create-account-section input{
+.login-section input{
    
-    margin: 1em;
+    
     padding: .50em;
 }
 
@@ -63,6 +69,7 @@ body {
         appearance: none;
         outline: none;
         font-size: 14px;
+        margin: 1em;
     }
 
     .input-placeholder {
@@ -84,12 +91,15 @@ body {
     }
 }
 
-.create-account-cta {
+.login-cta {
     border: 1px solid #707070;
     border-radius: .5em;
     background-color: #00B7E6;
     color: white;
     font-weight: 700;
+    display: block;
+    margin-top: 10px;
+    margin-left: 40%;
 
     &:hover {
         background-color: #0b76da;
@@ -97,7 +107,7 @@ body {
     }
 }
 
-.existing-account-section {
+.create-account-section {
     border: 1px solid #707070;
     border-radius: 1em;
     background-color: white;
